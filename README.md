@@ -33,4 +33,4 @@ It calculates a person's age in years based on the date of birth entered.
 
 1️⃣ Clone the repository:
 ```bash
-git clone https://github.com/your-username/age-calculator.git
+https://github.com/simplysamiul/js-age-calculator.git
