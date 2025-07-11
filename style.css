@@ -1,0 +1,35 @@
+.date-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+.form-container {
+    text-align: center;
+    border: 1px solid lightgray;
+    padding: 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 5em 10px #646cffaa;
+    background: transparent;
+}
+
+.form-container h1 {
+    font-size: 42px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-container form input {
+    display: block;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.form-container form button {
+    width: 100%;
+}

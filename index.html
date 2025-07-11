@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age-Calculaor</title>
+    <!-- daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- css file -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="date-container">
+        <div class="form-container">
+            <h1>Life Clock</h1>
+            <form class="date-form">
+                <input id="dob" type="date" name="" id="">
+                <button id="submitAge" class="btn btn-primary">Calculate</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- js script file -->
+    <script>
+
+        document.getElementById("submitAge").addEventListener("click", (e) => {
+            e.preventDefault();
+            // get input date input field value
+            const date = document.getElementById("dob").value;
+            const givenDate = new Date(date);
+            const today = new Date();
+            // get year
+            const getYear = today.getFullYear() - givenDate.getFullYear();
+            // get month
+            const getMonth = today.getMonth() - givenDate.getMonth();
+            // get day
+            const getDay = today.getDay() - givenDate.getMonth();
+
+            console.log(getYear + "Year" + getMonth + "Month" + getDay + "Day")
+
+        })
+
+    </script>
+</body>
+
+</html>
